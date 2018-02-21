@@ -6,7 +6,6 @@
  * Free to use under the GPLv2 license.
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
- * Contributing author: Tyler Smith (@mbmufffin)
  */
 /* Browser Resets */
 .flex-container a:active,
@@ -15,17 +14,17 @@
 .flexslider a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
 /* FlexSlider Necessary Styles
-*********************************/ 
+*********************************/
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 100%; display: block;}
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
-.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
-html[xmlns] .slides {display: block;} 
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
 * html .slides {height: 1%;}
 
 /* No JavaScript Fallback */
@@ -110,9 +109,9 @@ html[xmlns] .slides {display: block;}
     cursor: pointer;
     text-indent: -9999px;
     border-radius: 50%;
-    border: 2px solid #FAFAFA; 
+    border: 2px solid #FAFAFA;
 }
-.flex-control-paging li a.flex-active { 
+.flex-control-paging li a.flex-active {
 	background:#f30d60;
     cursor: default;
 }
@@ -123,13 +122,13 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
 
-/* -- RESPONSIVE --*/ 
+/* -- RESPONSIVE --*/
 @media screen and (max-width: 1080px){
 .flex-direction-nav .flex-prev {
     left: 113%;
-} 
-} 
-@media screen and (max-width: 991px) {  
+}
+}
+@media screen and (max-width: 991px) {
 .flex-direction-nav .flex-prev {
     left: 105%;
 }
@@ -143,28 +142,28 @@ html[xmlns] .slides {display: block;}
 }
 .flex-direction-nav .flex-next {
     right: 10%;
-} 
-} 
-@media screen and (max-width: 667px){ 
+}
+}
+@media screen and (max-width: 667px){
 .flex-direction-nav .flex-next {
     right: 8%;
 }
 }
-@media screen and (max-width: 480px){ 
+@media screen and (max-width: 480px){
 .flex-direction-nav .flex-next {
     right: 4%;
 }
 }
-@media screen and (max-width: 414px){ 
+@media screen and (max-width: 414px){
 .flex-direction-nav .flex-next {
     right: 1%;
 }
 .flex-direction-nav .flex-prev {
     left: 78%;
-} 
-} 
-@media screen and (max-width: 320px){ 
+}
+}
+@media screen and (max-width: 320px){
 .flex-direction-nav .flex-prev {
     left: 75%;
 }
-} 
+}
